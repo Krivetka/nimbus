@@ -1,0 +1,5 @@
+<div class="card">
+  <img [src]=card?.Poster class="card__image">
+  <h2 class="card__title" [title]="card?.Title+'('+card?.Year+')'">{{card?.Title}}({{card?.Year}})</h2>
+  <button mat-stroked-button color="primary" class="card__button"  [routerLink]="['/film',card?.imdbID]">Show more</button>
+</div>
