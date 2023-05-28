@@ -1,0 +1,15 @@
+<button mat-fab matTooltip="Primary" color="primary" aria-label="Home"  routerLink="" class="home-button">
+  <mat-icon>home</mat-icon>
+</button>
+<div class="film-card">
+<div class="film-card__left-side">
+  <img [src]="filmData?.Poster" class="film-card__poster">
+</div>
+  <div class="film-card__right-side">
+    <h2 class="film-card__title">{{filmData?.Title}}</h2>
+    <h3 class="film-card__year">{{filmData?.Year}}</h3>
+    <h4 class="film-card__time">{{filmData?.Runtime}}</h4>
+    <p class="film-card__actors">Actors: {{filmData?.Actors}}</p>
+    <p class="film-card__info">{{filmData?.Plot}}</p>
+  </div>
+</div>
